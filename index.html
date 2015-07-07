@@ -2,11 +2,12 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="stylesheet" href="jquery.mobile-1.3.2.min.css" />
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<link rel="stylesheet" href="custom.css" />
-	<script src="jquery-2.0.3.min.js"></script>
-	<script src="jquery.mobile-1.3.2.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57-precomposed.png" />
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png" />
@@ -15,15 +16,15 @@
   <link rel="icon" type="image/png" href="apple-touch-icon.png">
 
 </head>
-<div data-role="page" data-add-back-btn="true" id="landing-page">
-  <div data-role="header" data-position="fixed"  data-theme="b">
+<div data-role="page" id="landing-page">
+  <div data-role="header" data-add-back-btn="true" data-position="fixed">
   	<h3>Pocket Reference</h3>
   </div>
   <div data-role="content">
   	<img src="content-images/yei-logo.gif" id="logo"/>
   	<p>Welcome to the YEI pocket Reference. Use this to quickly brush up on some of the key concepts here at camp. Don't forget to ask other human beings for help!</p>
   		<br>
-  	<ul data-role="listview" data-theme="c">	
+  	<ul data-role="listview">	
   		<li><a href="#html-home">
 				<h2>HTML Reference</h2>
 				<p>Explanations of key terms and common elements</p>
@@ -33,10 +34,6 @@
 				<h2>jQuery Mobile Refernce</h2>
 					<p>Data attributes and structure of jQuery Mobile</p></a>
 			</li>
-			<li><a href="#ftp-home">
-				<h2>Using FTP (Cyberduck)</h2>
-					<p>File Transfer Protocol: everything you need to know</p></a>
-			</li>
 			<li><a href="#chal-home">
 				<h2>Challenges!</h2>
 					<p>Hone your skills and win a prizes</p></a>
@@ -45,11 +42,11 @@
   </div>
 </div> <!--/LANDING PAGE -->
 <!--===================================================================================-->
-															 	<!--HTML Section-->
+							<!--HTML Section-->
 <!--===================================================================================-->
 <!--Key Concepts-->
-	<div data-role="page" data-add-back-btn="true" id="html-home">
-	<div data-role="header" data-position="fixed" data-theme="b"> 
+	<div data-role="page" id="html-home">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"> 
 		<h1>HTML Cheat Sheet</h1>
 	</div>
 	
@@ -84,29 +81,29 @@
 		</div>
 	</div>
 </div><!--Home-->
-	<div data-role="page" data-add-back-btn="true" id="term-html">
-	<div data-role="header" data-position="fixed" data-theme="b"> <h1>HTML</h1></div>
+	<div data-role="page" id="term-html">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"> <h1>HTML</h1></div>
 	
 	<div data-role="content">
 		<p><b>HTML</b> - <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage. A way of "marking up" text in a source file so that it will look differently when opened as a webpage.</p>
 		<p>Webpages are written in HTML. All the words and images you see are <a href="#term-element">HTML Elements</a>. You can write your own HTML files in a text editor like Notepad++. Just save it with the file extension ".html".</p>
 	</div>
 </div><!--HTML-->
-	<div data-role="page" data-add-back-btn="true" id="term-content">
-	<div data-role="header" data-position="fixed" data-theme="b"> <h1>Content</h1></div>
+	<div data-role="page" id="term-content">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"> <h1>Content</h1></div>
 	
 	<div data-role="content"><p><b>Content</b> - The words and images that you see in the webpage. When you see "Hello World" on the webpage, that's content. When you see a picture of a cat, that's content.</p>
 </div>
 	
 </div><!--Content-->
-	<div data-role="page" data-add-back-btn="true" id="term-tags">
-	<div data-role="header" data-position="fixed" data-theme="b"> <h1>Tags</h1></div>
+	<div data-role="page" id="term-tags">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"> <h1>Tags</h1></div>
 	
 	<div data-role="content"><p><b>Tags</b> - Labels which you use to "mark up" content to make it look a certain way. Tags start and end an HTML element (see Element). Example tags: <span class="s1">&lt;p&gt; &lt;ul&gt; &lt;li&gt; &lt;strong&gt; &lt;a&gt; &lt;h1&gt;</span></p></div>
 	
 </div><!--Tags-->
-	<div data-role="page" data-add-back-btn="true" id="term-element">
-	<div data-role="header" data-position="fixed" data-theme="b"> <h1>Element</h1></div>
+	<div data-role="page" id="term-element">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"> <h1>Element</h1></div>
 	
 	<div data-role="content"><p><b>Element</b> - Like in chemistry how everything is made up of chemical elements, in web design everything is made out of HTML elements.</p> 
 	<p>Think of an element as a complete HTML molecule. It is a full combination of an <b>opening tag</b>, the <b>content</b>, and a the corresponding <b>closing tag.</b></p>
@@ -114,23 +111,23 @@
 		<img src="content-images/element.gif" id="elementpic" />
 	</div>
 </div><!--Element-->
-	<div data-role="page" data-add-back-btn="true" id="term-attribute">
-	<div data-role="header" data-position="fixed" data-theme="b"> <h1>Attribute</h1></div>
+	<div data-role="page" id="term-attribute">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"> <h1>Attribute</h1></div>
 	
 	<div data-role="content"><p><b>Attribute</b> - Something put into the opening tag of an element to specify information about that element. The "<span class="s1">href</span>" attribute is used in the opening of an <span class="s1">&lt;a&gt;</span> tag to specify the destination of a link. The syntax goes: <span class="s1">name="value"</span></p>
 <p>Ex.<span class="code">&lt;a href="http://giip.org"&gt;</span>Link Text<span class="code">&lt;/a&gt;</span> see how the attribute is put into the open tag and follows the <span class="s1">name="value"</span> format.</p>
 <p>Ex. <span class="code">&lt;a data-role="button"&gt;</span>Link Text<span class="code">&lt;/a&gt; </span>will turn a normal text link into a button (jQuery Mobile only)</p></div>
 	
 </div><!--Attribute-->
-	<div data-role="page" data-add-back-btn="true" id="term-id">
-	<div data-role="header" data-position="fixed" data-theme="b"> <h1>id</h1></div>
+	<div data-role="page" id="term-id">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"> <h1>id</h1></div>
 	
 	<div data-role="content"><p><b>id</b> - An attribute used to give an identity, or ID, if you will, to an element. Id's are crucial to a lot of things that we do with jQuery Mobile and have to do with link destinations. Imagine that all life is a webpage. All people are the HTML element <span class="s1">&lt;person&gt;</span>. The id attribute allows us to differentiate between <span class="s1">&lt;person&gt;</span>'s. </p>
 <p class="p3">&lt;person id="Thomas"&gt;<span class="s2">I like turtles</span>&lt;/person&gt;</p></div>
 	
 </div><!--ID-->
-	<div data-role="page" data-add-back-btn="true" id="term-directory">
-  <div data-role="header">
+	<div data-role="page" id="term-directory">
+  <div data-role="header" data-add-back-btn="true">
   	<h1>Directory</h1>
   </div>
   <div data-role="content">
@@ -140,8 +137,8 @@
   	
   </div>
 </div><!--/Drctry--> 
-	<div data-role="page" data-add-back-btn="true" id="term-filepath">
-  <div data-role="header">
+	<div data-role="page" id="term-filepath">
+  <div data-role="header" data-add-back-btn="true">
   	<h1>File Path</h1>
   </div>
   <div data-role="content">
@@ -170,16 +167,16 @@
 </div> <!--/filepath -->
       <!--Add in SERVER-->
 <!--Common Elements-->
-	<div data-role="page" data-add-back-btn="true" id="tag-p">
-	<div data-role="header" data-position="fixed" data-theme="b"> <h1>&lt;p&gt;</h1></div>
+	<div data-role="page" id="tag-p">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"> <h1>&lt;p&gt;</h1></div>
 	
 	<div data-role="content">
 <p><b>&lt;p&gt;</b> - Paragraph. Whenever you want to represent normal text, you use &lt;p&gt;</p>
 <p><span class="code">&lt;p&gt;This sure is a swell paragraph&lt;/p&gt;</span></p></div>
 	
 </div>
-	<div data-role="page" data-add-back-btn="true" id="tag-h1">
-	<div data-role="header" data-position="fixed" data-theme="b">&lt;h1&gt;</div>
+	<div data-role="page" id="tag-h1">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed">&lt;h1&gt;</div>
 	
 	<div data-role="content">
 <p>&lt;h1&gt;-&lt;h6&gt; - Heading. Range from size 1 (&lt;h1&gt;) to size 6 (&lt;h6&gt;). You use these for layout. Often you will create a page that has distinct secitions. Headings are often short and too the point, followed by paragraphs.</p></div>
@@ -190,8 +187,8 @@
 	<h5>Heading 5</h5>
 	<h6>Heading 6</h6>
 </div><!-- /tag-h1 -->
-	<div data-role="page" data-add-back-btn="true" id="tag-ul">
-	<div data-role="header" data-position="fixed" data-theme="b"> <h1>&lt;ul&gt;</h1></div>
+	<div data-role="page" id="tag-ul">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"> <h1>&lt;ul&gt;</h1></div>
 	
 	<div data-role="content"><p>&lt;ul&gt; - Unordered List. You may know this by the name "bullet list".This tag declares that there's going to be an unordered list happening, but it won't produce anything on it's own. To make actual list items, you need...</p>
 
@@ -207,23 +204,23 @@
 
   </div>	
 </div><!-- /tag-ul -->
-	<div data-role="page" data-add-back-btn="true" id="tag-img">
-	<div data-role="header" data-position="fixed" data-theme="b"> <h1>&lt;img&gt;</h1></div>
+	<div data-role="page" id="tag-img">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"> <h1>&lt;img&gt;</h1></div>
 	
 	<div data-role="content"><p>&lt;img&gt; - Image. You can guess what this does. The &lt;img&gt; tag is a little different from others in that it doesn't require a closing tag. The attribute "src" defines the image source.</p>
 <p><span class="code">&lt;img src="URL or File Path" /&gt;</span></p></div>
 	
 </div><!-- /tag-img -->
-	<div data-role="page" data-add-back-btn="true" id="tag-a">
-	<div data-role="header" data-position="fixed" data-theme="b"> <h1>&lt;a&gt;</h1></div>
+	<div data-role="page" id="tag-a">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"> <h1>&lt;a&gt;</h1></div>
 	
 	<div data-role="content"><p>&lt;a&gt; - Anchor. It might help to think of it standing for "<b>A</b> link".	</span>&lt;a&gt; is an inline element. You wrap words or an image in the &lt;a&gt; and &lt;/a&gt; to make them into links. &lt;a&gt; will do nothing without the "href" attribute.</p>
 <p><span class="code">&lt;p&gt;I want to make the word &lt;a href=http://google.com&gt;Google&lt;/a&gt; a link.&lt;/p&gt;</span></p>
 <p>Did you know you can link to a point within your webpage? As long as an element has an id, you can use it as a destination. Use '#' and the id name as the destination in a link.</p></div>
 	
 </div><!-- /tag-a -->
-	<div data-role="page" data-add-back-btn="true" id="tag-div">
-	<div data-role="header" data-position="fixed" data-theme="b"> <h1>&lt;div&gt;</h1></div>
+	<div data-role="page" id="tag-div">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"> <h1>&lt;div&gt;</h1></div>
 	
 	<div data-role="content"><p>&lt;div&gt; - Division. This is a little tricky but absolutely essential. &lt;div&gt;s have no physical properites of their own. No height, no width, no color, and they do nothing to content placed within them. &lt;div&gt; s allow us to place parts of a webpage into containers so that we can define properties about those containers.</p>
 	
@@ -284,8 +281,8 @@
 		
 		</div>
 </div><!-- /tag-div -->
-	<div data-role="page" data-add-back-btn="true" id="tag-comment">
-	<div data-role="header" data-position="fixed" data-theme="b"> <h1>&lt;!-- --&gt;</h1></div>
+	<div data-role="page" id="tag-comment">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"> <h1>&lt;!-- --&gt;</h1></div>
 	
 	<div data-role="content">
 <p><span class="code">&lt;!-- --&gt;</span>- Comments. It's considered a best practice to leave comments in your code. They remind you what you're doing, help keep things organized, and help other people who are looking at your code to orient themselves.</p>
@@ -297,53 +294,15 @@
 <img src="content-images/comment.png" width="100%" />
 </div>
 </div><!--/tag-comment-->
-<!--===================================================================================-->
-																  <!--Cyberduck Section-->
-<!--===================================================================================-->
 
-	<div data-role="page" data-add-back-btn="true" id="ftp-home">
-  <div data-role="header">
-  	<h1>Cyberduck</h1>
-  </div>
-  <div data-role="content">
-  		<p>Cyberduck is a File Transfer Protocol (FTP) Client. A client is a program that runs on your computer and receives and interperates data from another source so that it's useful to the user.</p>
-  		<p>Your browser is a web client that recieves data like HTML, CSS, and JavaScript ad turns it into viewable webpages. It's built specifically to be familiar with web languages and protocols</p>
-  		<p>Outlook is an email client that recieves mail message data and organizes it into a mailbox.</p>
-  		
-  	<h2>What's It For?</h2>
-  			<p>FTP is the method used to transfer files (webpages, stylesheets, images, etc.) back and forth between a local device (your computer) and a remote server (a specially formatted computer somewhere else).</p>
-  			<p>We can make a billion functioning websites right on our laptops, but what's the point if no one else can see them? We need FTP to get them to our server so the world can view our aweomeness.</p>
-  			
-  				<a href="#ftp-tutorial" data-role="button">Cyberduck Tutorial</a>
-  </div>
-</div> <!--/ftp-home -->
-	<div data-role="page" data-add-back-btn="true" id="ftp-tutorial">
-  <div data-role="header">
-  	<h1>Using Cyberduck</h1>
-  </div>
-  <div data-role="content">
-  	<h3>Open Up Cyberduck</h3>
-  		<p>You could have guessed that part.</p>
-  	<h3>Hit "Open Connection"</h3>
-  		<p>You'll see a screen asking for a few things:</p>
-  			<ul id="ftpneed">
-    			<li>Server</li>
-   			  <li>Username</li>
-					<li>Password</li>
- 				</ul>
- 			<p>You should have these credentials written down somewhere. Normally, we would just print them here, but this is a public webpage and we can't have that kind of thing open to everyone.</p>
- 			<p>That's pretty much it. At this point, it functions just like any other folder. It's just that it's a folder on someone else's computer.</p>  
- 		
- 		<h2>Create and Edit Files!</h2>
- 			<p>Cyberduck allows you to create, edit, and move files while on the server. That means that if you have the webpage open on your phone or laptop, you can make changes, save, and have them show up immediately. No re-uploading required.</p>
-  </div>
-</div> <!--/ftp-tutorial -->
+<!--There used to be a section right here that was a tutorial for Cyberduck, our FTP program, but I took it out since it's not
+    at all realavent. If you wanna see it, you can view the first version of this repo on GitHub-->
 
 <!--===================================================================================-->
-																<!--Jquery Section-->
+						<!--Jquery Section-->
 <!--===================================================================================-->
-	<div data-role="page" data-add-back-btn="true" id="jquery-home">
-  <div data-role="header" data-position="fixed" data-theme="b">
+	<div data-role="page" id="jquery-home">
+  <div data-role="header" data-add-back-btn="true" data-position="fixed">
   	<h1>jQuery Mobile Reference</h1>
   </div>
   
@@ -363,8 +322,8 @@
   
   </div>
 </div> <!--/jquery-home -->
-	<div data-role="page" data-add-back-btn="true" id="jquery-attributes">
-  <div data-role="header" data-position="fixed" data-theme="b">
+	<div data-role="page" id="jquery-attributes">
+  <div data-role="header" data-add-back-btn="true" data-position="fixed">
   	<h1>Attributes</h1>
   </div>
   
@@ -417,8 +376,8 @@
 
   </div>
 </div> <!--/__jquery-attributes -->
-	<div data-role="page" data-add-back-btn="true" id="jquery-page-structure">
-  <div data-role="header" data-position="fixed" data-theme="b">
+	<div data-role="page" id="jquery-page-structure">
+  <div data-role="header" data-add-back-btn="true" data-position="fixed">
   	<h1>Page Strucure</h1>
   </div>
   
@@ -456,8 +415,8 @@
 
 </div>  
 </div> <!--/jquery-page-structure -->
-	<div data-role="page" data-add-back-btn="true" id="jquery-local">
-  <div data-role="header">
+	<div data-role="page" id="jquery-local">
+  <div data-role="header" data-add-back-btn="true">
   	<h1>Running Locally</h1>
   </div>
   <div data-role="content">
@@ -491,8 +450,8 @@
   			</div>
   </div>
 </div> <!--/jquery-local -->
-	<div data-role="page" data-add-back-btn="true" id="jquery-local2">
-  <div data-role="header">
+	<div data-role="page" id="jquery-local2">
+  <div data-role="header" data-add-back-btn="true">
   	<h1>Localization II</h1>
   </div>
   <div data-role="content">
@@ -521,11 +480,11 @@
   </div>
 </div> <!--/jquery-local2 -->
 <!--===================================================================================-->
-																  <!-- Challenges Section-->
+					<!-- Challenges Section-->
 <!--===================================================================================-->
 <!--Home Page-->
-	<div data-role="page" data-add-back-btn="true" id="chal-home">
-  <div data-role="header" data-theme="b">
+	<div data-role="page" id="chal-home">
+  <div data-role="header" data-add-back-btn="true">
   	<h1>Challenges!</h1>
   </div>
   
@@ -542,15 +501,15 @@
   </div>
 </div> <!--/challenges-home -->
 <!--Challenges-->
-	<div data-role="page" data-add-back-btn="true" id="chal-listview">
-  <div data-role="header" data-theme="b">
+	<div data-role="page" id="chal-listview">
+  <div data-role="header" data-add-back-btn="true">
   	<h1>List Views</h1>
   </div>
   <div data-role="content">
   	<p>Listviews allow us to change the way boring normal unordered lists are displayed. Click <a href="http://view.jquerymobile.com/1.3.2/dist/demos/widgets/listviews/" target="_blank">here</a> to see the official documentation for making and using listviews.</p>
   	
   	<!--Accordion Start-->
-  	<div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+  	<div data-role="collapsible-set" data-content-theme="d">
    
     <div data-role="collapsible">
         <h3>Tier 0</h3>
@@ -620,8 +579,8 @@
     </div><!--/Accordion-->
   </div>
 </div> <!--/chal-listview -->
-	<div data-role="page" data-add-back-btn="true" id="chal-accordions">
-  <div data-role="header" data-theme="b">
+	<div data-role="page" id="chal-accordions">
+  <div data-role="header" data-add-back-btn="true">
   	<h1>Accordions</h1>
   </div>
   <div data-role="content">
@@ -629,7 +588,7 @@
   	<p> To learn about <a href="http://view.jquerymobile.com/1.3.2/dist/demos/widgets/accordions/" target="_blank">accordions</a> you first need to understand its basic unit, the <a href="http://view.jquerymobile.com/1.3.2/dist/demos/widgets/collapsibles/" target="_blank">collapsible</a>.</p>
   	
   		<!--Accordion Start-->
-  		<div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+  		<div data-role="collapsible-set" data-content-theme="d">
     
     <div data-role="collapsible">
         <h3>Tier 1</h3>
@@ -664,13 +623,13 @@
 </div>  <!--/Accordion-->
   </div>
 </div> <!--/chal-accordions -->
-	<div data-role="page" data-add-back-btn="true" id="chal-images">
-  <div data-role="header" data-theme="b">
+	<div data-role="page" id="chal-images">
+  <div data-role="header" data-add-back-btn="true">
   	<h1>Images</h1>
   </div>
   <div data-role="content">
   	<p>Pictures make pretty</p>
-  	<div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+  	<div data-role="collapsible-set" data-content-theme="d">
     
     <div data-role="collapsible">
         <h3>Tier 1</h3>
@@ -694,13 +653,13 @@
 </div>  <!--/Accordion-->
   </div>
 </div> <!--/chal-images -->
-	<div data-role="page" data-add-back-btn="true" id="chal-navbars">
-  <div data-role="header" data-theme="b">
+	<div data-role="page" id="chal-navbars">
+  <div data-role="header" data-add-back-btn="true">
   	<h1>Navbars</h1>
   </div>
   <div data-role="content">
   	<p>Navbars help to make your site navigatable (navigable?). They are but one way of offering navigation to your users. Click <a href="http://view.jquerymobile.com/1.3.2/dist/demos/widgets/navbar/" target="_blank">here</a> for documentation on how to use them.</p>
-  	<div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+  	<div data-role="collapsible-set" data-content-theme="d">
   
     <div data-role="collapsible">
         <h3>Tier 1</h3>
