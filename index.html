@@ -1,0 +1,745 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="jquery.mobile-1.3.2.min.css" />
+	<link rel="stylesheet" href="custom.css" />
+	<script src="jquery-2.0.3.min.js"></script>
+	<script src="jquery.mobile-1.3.2.min.js"></script>
+ <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png" />
+
+  <link rel="icon" type="image/png" href="apple-touch-icon.png">
+
+</head>
+<div data-role="page" data-add-back-btn="true" id="landing-page">
+  <div data-role="header" data-position="fixed"  data-theme="b">
+  	<h3>Pocket Reference</h3>
+  </div>
+  <div data-role="content">
+  	<img src="content-images/yei-logo.gif" id="logo"/>
+  	<p>Welcome to the YEI pocket Reference. Use this to quickly brush up on some of the key concepts here at camp. Don't forget to ask other human beings for help!</p>
+  		<br>
+  	<ul data-role="listview" data-theme="c">	
+  		<li><a href="#html-home">
+				<h2>HTML Reference</h2>
+				<p>Explanations of key terms and common elements</p>
+				</a>
+			</li>
+  	  <li><a href="#jquery-home">
+				<h2>jQuery Mobile Refernce</h2>
+					<p>Data attributes and structure of jQuery Mobile</p></a>
+			</li>
+			<li><a href="#ftp-home">
+				<h2>Using FTP (Cyberduck)</h2>
+					<p>File Transfer Protocol: everything you need to know</p></a>
+			</li>
+			<li><a href="#chal-home">
+				<h2>Challenges!</h2>
+					<p>Hone your skills and win a prizes</p></a>
+			</li>
+		</ul>	
+  </div>
+</div> <!--/LANDING PAGE -->
+<!--===================================================================================-->
+															 	<!--HTML Section-->
+<!--===================================================================================-->
+<!--Key Concepts-->
+	<div data-role="page" data-add-back-btn="true" id="html-home">
+	<div data-role="header" data-position="fixed" data-theme="b"> 
+		<h1>HTML Cheat Sheet</h1>
+	</div>
+	
+	<div data-role="content">
+	<div data-role="collapsible-set">
+		<div data-role="collapsible" data-collapsed="true" data-content-theme="d">
+			<h2>Key Terms</h2>  
+				<ul data-role="listview" data-inset="false"  id="center-list-text">
+					<li data-icon="false"><a href="#term-attribute">Attribute</a></li>
+					<li data-icon="false"><a href="#term-content">Content</a></li>
+					<li data-icon="false"><a href="#term-directory">Directory</a></li>
+					<li data-icon="false"><a href="#term-element">Element</a></li>
+					<li data-icon="false"><a href="#term-filepath">File Path</a></li>
+					<li data-icon="false"><a href="#term-html">HTML</a></li>
+					<li data-icon="false"><a href="#term-id">id</a></li>
+					<li data-icon="false"><a href="#term-tags">Tags</a></li>
+				</ul>
+		</div>
+		
+		<div data-role="collapsible" data-content-theme="d">
+		<h2>Common Tags</h2>  
+			<ul data-role="listview" id="center-list-text">
+				<li data-icon="false"><a href="#tag-p">&lt;p&gt;</a></li>
+				<li data-icon="false"><a href="#tag-h1">&lt;h1&gt;</a></li>
+				<li data-icon="false"><a href="#tag-ul">&lt;ul&gt;</a></li>
+				<li data-icon="false"><a href="#tag-img">&lt;img&gt;</a></li>
+				<li data-icon="false"><a href="#tag-a">&lt;a&gt;</a></li>
+				<li data-icon="false"><a href="#tag-div">&lt;div&gt;</a></li>
+				<li data-icon="false"><a href="#tag-comment">&lt;!-- comments --&gt;</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+</div><!--Home-->
+	<div data-role="page" data-add-back-btn="true" id="term-html">
+	<div data-role="header" data-position="fixed" data-theme="b"> <h1>HTML</h1></div>
+	
+	<div data-role="content">
+		<p><b>HTML</b> - <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage. A way of "marking up" text in a source file so that it will look differently when opened as a webpage.</p>
+		<p>Webpages are written in HTML. All the words and images you see are <a href="#term-element">HTML Elements</a>. You can write your own HTML files in a text editor like Notepad++. Just save it with the file extension ".html".</p>
+	</div>
+</div><!--HTML-->
+	<div data-role="page" data-add-back-btn="true" id="term-content">
+	<div data-role="header" data-position="fixed" data-theme="b"> <h1>Content</h1></div>
+	
+	<div data-role="content"><p><b>Content</b> - The words and images that you see in the webpage. When you see "Hello World" on the webpage, that's content. When you see a picture of a cat, that's content.</p>
+</div>
+	
+</div><!--Content-->
+	<div data-role="page" data-add-back-btn="true" id="term-tags">
+	<div data-role="header" data-position="fixed" data-theme="b"> <h1>Tags</h1></div>
+	
+	<div data-role="content"><p><b>Tags</b> - Labels which you use to "mark up" content to make it look a certain way. Tags start and end an HTML element (see Element). Example tags: <span class="s1">&lt;p&gt; &lt;ul&gt; &lt;li&gt; &lt;strong&gt; &lt;a&gt; &lt;h1&gt;</span></p></div>
+	
+</div><!--Tags-->
+	<div data-role="page" data-add-back-btn="true" id="term-element">
+	<div data-role="header" data-position="fixed" data-theme="b"> <h1>Element</h1></div>
+	
+	<div data-role="content"><p><b>Element</b> - Like in chemistry how everything is made up of chemical elements, in web design everything is made out of HTML elements.</p> 
+	<p>Think of an element as a complete HTML molecule. It is a full combination of an <b>opening tag</b>, the <b>content</b>, and a the corresponding <b>closing tag.</b></p>
+	 <hr>	
+		<img src="content-images/element.gif" id="elementpic" />
+	</div>
+</div><!--Element-->
+	<div data-role="page" data-add-back-btn="true" id="term-attribute">
+	<div data-role="header" data-position="fixed" data-theme="b"> <h1>Attribute</h1></div>
+	
+	<div data-role="content"><p><b>Attribute</b> - Something put into the opening tag of an element to specify information about that element. The "<span class="s1">href</span>" attribute is used in the opening of an <span class="s1">&lt;a&gt;</span> tag to specify the destination of a link. The syntax goes: <span class="s1">name="value"</span></p>
+<p>Ex.<span class="code">&lt;a href="http://giip.org"&gt;</span>Link Text<span class="code">&lt;/a&gt;</span> see how the attribute is put into the open tag and follows the <span class="s1">name="value"</span> format.</p>
+<p>Ex. <span class="code">&lt;a data-role="button"&gt;</span>Link Text<span class="code">&lt;/a&gt; </span>will turn a normal text link into a button (jQuery Mobile only)</p></div>
+	
+</div><!--Attribute-->
+	<div data-role="page" data-add-back-btn="true" id="term-id">
+	<div data-role="header" data-position="fixed" data-theme="b"> <h1>id</h1></div>
+	
+	<div data-role="content"><p><b>id</b> - An attribute used to give an identity, or ID, if you will, to an element. Id's are crucial to a lot of things that we do with jQuery Mobile and have to do with link destinations. Imagine that all life is a webpage. All people are the HTML element <span class="s1">&lt;person&gt;</span>. The id attribute allows us to differentiate between <span class="s1">&lt;person&gt;</span>'s. </p>
+<p class="p3">&lt;person id="Thomas"&gt;<span class="s2">I like turtles</span>&lt;/person&gt;</p></div>
+	
+</div><!--ID-->
+	<div data-role="page" data-add-back-btn="true" id="term-directory">
+  <div data-role="header">
+  	<h1>Directory</h1>
+  </div>
+  <div data-role="content">
+  	<p>In computering, we use some different terms for things you might already know of. One of the biggest is that we call "Folders" "Directories". Whenever we say, "Go to your <strong>root directory</strong>", we mean, "Go to the folder where you put your app".</p>
+  	
+  	<p>Root Directory is the term we use to refer to the top most folder. The one that contains your "index.html"
+  	
+  </div>
+</div><!--/Drctry--> 
+	<div data-role="page" data-add-back-btn="true" id="term-filepath">
+  <div data-role="header">
+  	<h1>File Path</h1>
+  </div>
+  <div data-role="content">
+  	<p>File Paths are the directions that you tell to the computer to let them know where things are.</p>
+  	<p>There is an absolute path, which starts with your computer's home directory. I'm writing this app on my computer. Here's the absolute file path:</p>
+  	<p><span class="code">Users/laptop/Desktop/Dropbox/YEI/Working/pocket-ref/index.html</span></p>
+  	
+  	<div data-role="collapsible">
+  		<h2>See Explanation</h2>  
+    		<ul>
+					<li>The path begins with "Users" wherein you'll find the files for every account (I'm the admin).</li>
+					<li>My user is named "laptop" so we enter that directory and </li>
+					<li>find that the desktop of your computer is actually a directory itself.</li>
+					<li>I use Dropbox to hold everything (I've scored a lot of free space) so naturally we'll go in there.</li>
+					<li>I have a folder called "YEI" which houses everything regarding this camp. There's a lot of archival stuff so I made a folder called</li>
+					<li>"Working" so I can easily find stuff important to current projects.</li>
+					<li>One of the things I'm working on is this "pocket-ref" and finally within that directory is a file.</li>
+					<li> index.html.</li>
+ 				</ul>
+		</div>
+		<div data-role="collapsible">
+  <h2>See The Path</h2>  
+    <img src="content-images/total-file-path.gif" />
+</div>
+  </div>
+</div> <!--/filepath -->
+      <!--Add in SERVER-->
+<!--Common Elements-->
+	<div data-role="page" data-add-back-btn="true" id="tag-p">
+	<div data-role="header" data-position="fixed" data-theme="b"> <h1>&lt;p&gt;</h1></div>
+	
+	<div data-role="content">
+<p><b>&lt;p&gt;</b> - Paragraph. Whenever you want to represent normal text, you use &lt;p&gt;</p>
+<p><span class="code">&lt;p&gt;This sure is a swell paragraph&lt;/p&gt;</span></p></div>
+	
+</div>
+	<div data-role="page" data-add-back-btn="true" id="tag-h1">
+	<div data-role="header" data-position="fixed" data-theme="b">&lt;h1&gt;</div>
+	
+	<div data-role="content">
+<p>&lt;h1&gt;-&lt;h6&gt; - Heading. Range from size 1 (&lt;h1&gt;) to size 6 (&lt;h6&gt;). You use these for layout. Often you will create a page that has distinct secitions. Headings are often short and too the point, followed by paragraphs.</p></div>
+	<h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+	<h3>Heading 3</h3>
+	<h4>Heading 4</h4>
+	<h5>Heading 5</h5>
+	<h6>Heading 6</h6>
+</div><!-- /tag-h1 -->
+	<div data-role="page" data-add-back-btn="true" id="tag-ul">
+	<div data-role="header" data-position="fixed" data-theme="b"> <h1>&lt;ul&gt;</h1></div>
+	
+	<div data-role="content"><p>&lt;ul&gt; - Unordered List. You may know this by the name "bullet list".This tag declares that there's going to be an unordered list happening, but it won't produce anything on it's own. To make actual list items, you need...</p>
+
+<p>&lt;li&gt; - List Item. These create actual things to show up in the list. Each time you want a new list item, you just skip a line and add another &lt;li&gt;content&lt;/li&gt; element.</p>
+
+<pre>
+  &lt;ul&gt;
+    &lt;li&gt;List Item 1&lt;/li&gt;
+    &lt;li&gt;List Item 2&lt;/li&gt;
+    &lt;li&gt;List Item 3&lt;/li&gt;
+  &lt;/ul&gt;
+</pre>
+
+  </div>	
+</div><!-- /tag-ul -->
+	<div data-role="page" data-add-back-btn="true" id="tag-img">
+	<div data-role="header" data-position="fixed" data-theme="b"> <h1>&lt;img&gt;</h1></div>
+	
+	<div data-role="content"><p>&lt;img&gt; - Image. You can guess what this does. The &lt;img&gt; tag is a little different from others in that it doesn't require a closing tag. The attribute "src" defines the image source.</p>
+<p><span class="code">&lt;img src="URL or File Path" /&gt;</span></p></div>
+	
+</div><!-- /tag-img -->
+	<div data-role="page" data-add-back-btn="true" id="tag-a">
+	<div data-role="header" data-position="fixed" data-theme="b"> <h1>&lt;a&gt;</h1></div>
+	
+	<div data-role="content"><p>&lt;a&gt; - Anchor. It might help to think of it standing for "<b>A</b> link".	</span>&lt;a&gt; is an inline element. You wrap words or an image in the &lt;a&gt; and &lt;/a&gt; to make them into links. &lt;a&gt; will do nothing without the "href" attribute.</p>
+<p><span class="code">&lt;p&gt;I want to make the word &lt;a href=http://google.com&gt;Google&lt;/a&gt; a link.&lt;/p&gt;</span></p>
+<p>Did you know you can link to a point within your webpage? As long as an element has an id, you can use it as a destination. Use '#' and the id name as the destination in a link.</p></div>
+	
+</div><!-- /tag-a -->
+	<div data-role="page" data-add-back-btn="true" id="tag-div">
+	<div data-role="header" data-position="fixed" data-theme="b"> <h1>&lt;div&gt;</h1></div>
+	
+	<div data-role="content"><p>&lt;div&gt; - Division. This is a little tricky but absolutely essential. &lt;div&gt;s have no physical properites of their own. No height, no width, no color, and they do nothing to content placed within them. &lt;div&gt; s allow us to place parts of a webpage into containers so that we can define properties about those containers.</p>
+	
+	<p>Consider this block of code. It Has a header <span class="code">&lt;div&gt;</span> above a content <span class="code">&lt;div&gt;</span>, and they are both inside the page <span class="code">&lt;div&gt;</span>.</p>
+<pre>
+&lt;div&gt;  <--The page <span class="code">&lt;div&gt;</span>
+ &lt;div&gt; <--The header <span class="code">&lt;div&gt;</span>
+   &lt;h1&gt;I'm the Header&lt;/h1&gt;
+ &lt;/div&gt;
+ &lt;div&gt; <--The content <span class="code">&lt;div&gt;</span>
+   &lt;p&gt;I'm the content&lt;/p&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</pre>	
+
+	<p>And here's what it looks like on the browser (horizontal lines are not part of it)</p>
+	<hr>
+	<div>
+		<div>
+			<h1>I'm the Header</h1>
+		</div>
+		<div>
+			<p>I'm the content</p>
+		</div>
+	</div>
+	<hr>
+	<p>Don't see anything special? That's because <span class="code">&lt;div&gt;</span>s have no physical properties of their own. I'll add some color to make them visible</p>
+<pre>
+&lt;div style="background:purple;"&gt; 
+ &lt;div style="background:pink;"&gt;
+   &lt;h1&gt;I'm the Header&lt;/h1&gt;
+ &lt;/div&gt;
+ &lt;div style="background:blue;"&gt;
+   &lt;p&gt;I'm the content&lt;/p&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+	<p>And here's what it looks like with those style attributes added:</p>
+<hr>
+	<div style="background:purple;">
+		<div style="background:pink;">
+			<h1>I'm the Header</h1>
+		</div>
+		<div style="background:blue;">
+			<p>I'm the content</p>
+		</div>
+	</div>
+	<hr>
+		<p><span class="code">&lt;div&gt;</span>s are often working behind the scense. Just understand that they're part of what makes jQuery Mobile work the way it does.</p>
+		
+	<h3>Important Points About <span class="code">&lt;div&gt;</span></h3>
+		<ul>
+			<li>They are invisible unless you alter them with style or jQuery attributes</li>
+			<li>They can be placed inside eachother</li>
+			<li>They can be thought of as "containers"</li>
+		</ul>
+		
+		</div>
+</div><!-- /tag-div -->
+	<div data-role="page" data-add-back-btn="true" id="tag-comment">
+	<div data-role="header" data-position="fixed" data-theme="b"> <h1>&lt;!-- --&gt;</h1></div>
+	
+	<div data-role="content">
+<p><span class="code">&lt;!-- --&gt;</span>- Comments. It's considered a best practice to leave comments in your code. They remind you what you're doing, help keep things organized, and help other people who are looking at your code to orient themselves.</p>
+
+<p>Comments only show up in the code, not in the rendered webpage.<!--Comments make your life much much easier. You should get in the habit of using them--> There is actually a big comment stuck in the middle of this paragraph, but you can't see it unless you look at the source.</p>
+
+<p>Comments are made like this:
+<pre>&lt;!-- Your Comment Here --&gt;</pre>
+<img src="content-images/comment.png" width="100%" />
+</div>
+</div><!--/tag-comment-->
+<!--===================================================================================-->
+																  <!--Cyberduck Section-->
+<!--===================================================================================-->
+
+	<div data-role="page" data-add-back-btn="true" id="ftp-home">
+  <div data-role="header">
+  	<h1>Cyberduck</h1>
+  </div>
+  <div data-role="content">
+  		<p>Cyberduck is a File Transfer Protocol (FTP) Client. A client is a program that runs on your computer and receives and interperates data from another source so that it's useful to the user.</p>
+  		<p>Your browser is a web client that recieves data like HTML, CSS, and JavaScript ad turns it into viewable webpages. It's built specifically to be familiar with web languages and protocols</p>
+  		<p>Outlook is an email client that recieves mail message data and organizes it into a mailbox.</p>
+  		
+  	<h2>What's It For?</h2>
+  			<p>FTP is the method used to transfer files (webpages, stylesheets, images, etc.) back and forth between a local device (your computer) and a remote server (a specially formatted computer somewhere else).</p>
+  			<p>We can make a billion functioning websites right on our laptops, but what's the point if no one else can see them? We need FTP to get them to our server so the world can view our aweomeness.</p>
+  			
+  				<a href="#ftp-tutorial" data-role="button">Cyberduck Tutorial</a>
+  </div>
+</div> <!--/ftp-home -->
+	<div data-role="page" data-add-back-btn="true" id="ftp-tutorial">
+  <div data-role="header">
+  	<h1>Using Cyberduck</h1>
+  </div>
+  <div data-role="content">
+  	<h3>Open Up Cyberduck</h3>
+  		<p>You could have guessed that part.</p>
+  	<h3>Hit "Open Connection"</h3>
+  		<p>You'll see a screen asking for a few things:</p>
+  			<ul id="ftpneed">
+    			<li>Server</li>
+   			  <li>Username</li>
+					<li>Password</li>
+ 				</ul>
+ 			<p>You should have these credentials written down somewhere. Normally, we would just print them here, but this is a public webpage and we can't have that kind of thing open to everyone.</p>
+ 			<p>That's pretty much it. At this point, it functions just like any other folder. It's just that it's a folder on someone else's computer.</p>  
+ 		
+ 		<h2>Create and Edit Files!</h2>
+ 			<p>Cyberduck allows you to create, edit, and move files while on the server. That means that if you have the webpage open on your phone or laptop, you can make changes, save, and have them show up immediately. No re-uploading required.</p>
+  </div>
+</div> <!--/ftp-tutorial -->
+
+<!--===================================================================================-->
+																<!--Jquery Section-->
+<!--===================================================================================-->
+	<div data-role="page" data-add-back-btn="true" id="jquery-home">
+  <div data-role="header" data-position="fixed" data-theme="b">
+  	<h1>jQuery Mobile Reference</h1>
+  </div>
+  
+  <div data-role="content">
+  	<p>This sections is designed to help you out with jQuery Mobile. It contains a lot of quick references and tips. </p>
+  	
+    <h2>Running jQuery Locally</h2>
+  		<p>You may notice that if you try and test your app without an internet connection it won't work. That's becasue jQuery isn't a native function of the web browser. We want our apps to work without an internet connection. Check out this section to understand how that works. <a href="#jquery-local" data-role="button">Visit Localization Page</a></p>
+  	
+  	<h2>Data Attributes</h2>
+  		<p>Understanding how jQuery Mobile uses attributes to do magic is crucial. This page will show you how to properly use data attributes.<a href="#jquery-attributes" data-role="button">Visit Attributes Page</a></p>
+  	
+  	<h2>Page Structure</h2>
+  		<p>Now that you understand how to use attributes in jQuery Mobile, you should know how to assemble a page. This page will explain the structure of a jQuery Mobile app and how we divide it up to make individual pages. <a href="#jquery-page-structure" data-role="button">Visit Basics Page</a></p>
+  
+  	
+  
+  </div>
+</div> <!--/jquery-home -->
+	<div data-role="page" data-add-back-btn="true" id="jquery-attributes">
+  <div data-role="header" data-position="fixed" data-theme="b">
+  	<h1>Attributes</h1>
+  </div>
+  
+  <div data-role="content">
+  	<p>Try and remember these key concepts, and you will do well with this platform.</p>
+
+  	<h2>The "data" Attribute</h2>
+  		<p>You'll recall that attributes are pieces of information that go into the opening tag of an HTML element to specify information about that element. When you set the destination of a link<pre>
+  &lt;a href="#home"&gt;
+  		</pre>
+  		you are using an attribute to set special information about the &lt;a&gt; element.</p>
+  		
+  		<p>jQuery Mobile uses magic to turn 100's of lines of javascript code into a single attribute that we place into our HTML elements. With it we can make drastic changes to our simple HTML elements. Take a simple unordered list:<pre>
+  &lt;ul&gt;
+   &lt;li&gt;This List&lt;/li&gt;
+   &lt;li&gt;Is&lt;/li&gt;
+   &lt;li&gt;Dull&lt;/li&gt;
+  &lt;/ul&gt;
+  		  </pre>
+  		Which ends up looking like:</p>
+  		<ul>
+        <li>This List</li>
+        <li>Is</li>
+        <li>Dull</li>
+      </ul>
+  		<p>We can make it into something that looks like this:</p>
+  		
+  		<ul data-role="listview">
+        <li>This List</li>
+        <li>Is</li>
+        <li>Rad</li>
+      </ul>
+    
+    	<p>All we had to do was add the attribute <pre>data-role="listview"</pre> to the opening &lt;ul&gt; tag.</p>
+    	
+    	<p>Likewise, we can turn a simple link<pre>
+&lt;a href="#jquery-home"&gt;Home&lt;/a&gt;
+  </pre>
+         Into a button with a single attribute, <pre>data-role="button"</pre></p>
+      <p>Thus, this</p>
+      <a href="#jquery-home">Home</a>
+      <p>becomes</p>
+      <a href="#jquery-home" data-role="button">Home</a>
+      <p>We can even use an attribute to give it an icon! Using <pre>data-icon="home"</pre> we can add a little icon of a house.</p>
+      <a href="#jquery-home" data-role="button" data-icon="home">Home</a>
+      
+      <p>Understanding that basically everything we do with jQuery Mobile hinges on using attributes to change our simple HTML into something complicated. Once you understand that, you can make any number of amazing widgets.</p>
+      
+      <p>Read on to the page on <a href="#jquery-page-structure">Page Structure</a> to understand how we lay out the code of our apps.</p> 
+
+  </div>
+</div> <!--/__jquery-attributes -->
+	<div data-role="page" data-add-back-btn="true" id="jquery-page-structure">
+  <div data-role="header" data-position="fixed" data-theme="b">
+  	<h1>Page Strucure</h1>
+  </div>
+  
+  <div data-role="content">
+  	<h2>How Do we Create a jQuery Mobile App?</h2>
+
+  	<p>In conventional web design, you would have a different HTML page for each webpage you have (<span class="code">index.html, about.html, etc.</span>). We use jQuery Mobile to forget that and have everything on one single HTML document. Everything you've seen on this reference guide is in the exact same file called <span class="code">index.html</span>.</p>
+
+  	<p>jQuery Mobile uses its magical <a href="#jquery-attributes">data attributes</a> to create sections within the document that it will treat as if they were pages. How is that accomplished? We use <span class="code">&lt;div&gt;</span>'s to create "containers" that we can then designate as pages and parts of pages.</p>
+  
+  	<p>A page consists of a series of <span class="code">&lt;div&gt;</span>'s with specific data attributes telling them what they should be. Look at the following code:</p>
+<pre>
+&lt;div data-role="page" id="page-id"&gt;
+  &lt;div data-role="header"&gt;
+  	&lt;h1&gt;Header Text&lt;/h1&gt;
+  &lt;/div>
+  
+  &lt;div data-role="content"&gt;
+    &lt;p&gt;This is where you write 
+    the page content&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+  
+		<p>Take not that there are a total of 3 <span class="code">&lt;div&gt;</span>'s in the above code. You have the <span class="code">&lt;div&gt;</span> for the header, the <span class="code">&lt;div&gt;</span> for the content, and these are both <em>inside</em> the "page" <span class="code">&lt;div&gt;</span>.</p>
+
+	<h3>Tortured Metaphor Time</h3>
+		<p>Think of a jQuery Mobile page as a cheeseburger. The meat is the content <span class="code">&lt;div&gt;</span>, the toppings are the heading <span class="code">&lt;div&gt;</span> and they're both in between the the buns which you can think of as the page <span class="code">&lt;div&gt;</span>.</p>
+		
+		<p>A jQuery Mobile app is therefor a big stack of cheeseburgers...or something. Metaphors will only get you so far. The important thing to remember is that a jQuery Mobile app is just a collection of content that are individually contained in a <span class="code">&lt;div&gt;</span> with the data-role of "page".</p>
+		
+	<h2>jquerymobile</h2>
+		<p>The official documentation will explain this in more detail so give them a vist
+		<a href="http://view.jquerymobile.com/1.3.2/dist/demos/widgets/pages/" data-role="button" />Go To Official Site</a></p>
+
+</div>  
+</div> <!--/jquery-page-structure -->
+	<div data-role="page" data-add-back-btn="true" id="jquery-local">
+  <div data-role="header">
+  	<h1>Running Locally</h1>
+  </div>
+  <div data-role="content">
+  	<p>This section will acquaint you on how jQuery can be run offline</p>
+  	<h2>jQuery is an API</h2>
+  		<p>API stands for Application Programming Interface. According to wikipedia:</p>
+  			<blockquote>"An application programming interface specifies how some software components should interact with each other. In practice, most often an API is a library that includes specifications for routines, data structures, object classes, and variables."</blockquote>
+  		<p>Basically what it's saying is that your browser doesn't understand what all this <span class="code">data-role</span> business is about so we need to give it a set of instructions that it does understand so that it can render things properly.</p>
+  			<img src="content-images/confused-computer.gif" id="logo" />
+  		<p>Languages like HTML, CSS, and JavaScript make perfect sense to your browser. It they were designed along side each other and work beautifully in tandem. Developers have found truly wonderous uses using these languages, but they require a lot of code and knowledge of that code.</p>
+  		
+  		<p>Look up in the <span class="code">&lt;head&gt;</span> section of any jQuery Mobile app. You'll see links to three files:<br>
+  		<span class="code">http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js</span>
+  		<br>
+  		<span class="code">http://code.jquery.com/jquery-1.9.1.min.js</span>
+  		<span class="code">http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css</span>
+  		</p>
+  		
+  		<p>These are the two JavaScript libraries and CSS style sheet that contain all the programming that makes awesome things happen.</p>
+  		<p>Whenever you add <span class="code">data-role="listview"</span> to an unordered list and it makes it all smart phone-y, it's telling the browser to go into the JavaScript library and execute a block of code. Visit one of those links and you'll see how much code we're talking about.</p>
+  		
+  		<h2>Move it Closer to Home</h2>
+  			<p>It works really well to have the jQuery libraries hosted on a Content Distribution Network (CDN). So well in fact that it's faster for your browser to get the libraries from them each time a page loads than it is to pull them from your own server.</p>
+  			
+  			<p>However, we want our apps to work whether the user has an internent connection or not. To accomplish this, we need to make our own local libraries by writing them ourselves.</p>
+  			
+  			<div data-role="collapsible">
+  			<h2>Instructions on Writing The Libraries</h2>
+  			<p>Just kidding. That would take a million years. We're just going to copy them from the jQuery Foundation's website</p>
+  			<a href="#jquery-local2" data-role="button">Localization Page 2</a>
+  			</div>
+  </div>
+</div> <!--/jquery-local -->
+	<div data-role="page" data-add-back-btn="true" id="jquery-local2">
+  <div data-role="header">
+  	<h1>Localization II</h1>
+  </div>
+  <div data-role="content">
+  	<p>Finding the libraries you need is very simple, you're already linked to them. It's just a matter of downloading them and changing the reference in apps.</p>
+  	
+  	<h3>Getting the Files</h3>
+  		<p>Go to code.jquery.com and find the following files:</p>
+  			<ol>
+  				<li>jQuery Mobile 1.3.2 theme</li>
+  				<li>jQuery Mobile 1.3.2 minified</li>
+  				<li>jQuery Core 2.0.3 minified</li>
+  			</ol>
+  		<div data-role="collapsible">
+  			<h2>Click for Screenshot</h2>
+  				<img src="content-images/jqcore.png" width="100%" />
+  				<img src="content-images/jqcss.png" width="100%" />
+  		</div>
+  		<p>Right-click on the file links and hit "Save Link As" and download it to your app directory.</p>
+  		<p>Now all you have to do is go back to the <span class="code">head</span> section and erase the first part of the path for each of these files. The ultimate name of the files will remain the same, but since they're now in your root directory, the path has changed.<p>
+  		<img src="content-images/change-path.png" width="100%" />
+  	
+  	<h2>Getting the Images</h2>
+  		<p>We're almost done. We still need to get the images to work offline. On your laptop, go to <a href="http://jquerymobile.com/resources/download/jquery.mobile-1.3.2.zip">http://jquerymobile.com/resources/download/jquery.mobile-1.3.2.zip</a></p>
+  		
+  		<p>Open up the folder and drag the "images" folder into your app directory.</p>
+  </div>
+</div> <!--/jquery-local2 -->
+<!--===================================================================================-->
+																  <!-- Challenges Section-->
+<!--===================================================================================-->
+<!--Home Page-->
+	<div data-role="page" data-add-back-btn="true" id="chal-home">
+  <div data-role="header" data-theme="b">
+  	<h1>Challenges!</h1>
+  </div>
+  
+  <div data-role="content">
+  	<p>We realize that it's kind of difficult to say, "Make some apps." You're learning and there is a ridiculous amount of stuff to be learned. This section aims to help add some structure and, dare we say, fun, to the process.</p>
+  	<p>Below you'll find a collection of challenges relating to various jQuery Mobile concepts and widgets. When you complete one, show a counselor and get your name up on the progress board! First to complete them all gets a prize!</p>
+  	
+  		<ul data-role="listview" data-inset="true">
+  			<li><a href="#chal-listview">List View</a></li>
+  			<li><a href="#chal-accordions">Accordions</a></li>
+  			<li><a href="#chal-images">Images</a></li>
+  			<li><a href="#chal-navbars">Navbars</a></li>
+  		</ul>
+  </div>
+</div> <!--/challenges-home -->
+<!--Challenges-->
+	<div data-role="page" data-add-back-btn="true" id="chal-listview">
+  <div data-role="header" data-theme="b">
+  	<h1>List Views</h1>
+  </div>
+  <div data-role="content">
+  	<p>Listviews allow us to change the way boring normal unordered lists are displayed. Click <a href="http://view.jquerymobile.com/1.3.2/dist/demos/widgets/listviews/" target="_blank">here</a> to see the official documentation for making and using listviews.</p>
+  	
+  	<!--Accordion Start-->
+  	<div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+   
+    <div data-role="collapsible">
+        <h3>Tier 0</h3>
+        <p>Create an unordered list in a webpage or jQuery app.</p>
+        <p>Make sure it has:</p>
+          <ul>
+          	<li>At least 4 items</li>
+          	<li>Make them all links</li>
+          </ul>
+        <p>Ideas for content include: List of your favorite websites, schools you're interested it, links to animal pictures</p>
+    </div>
+    
+     <div data-role="collapsible">
+        <h3>Tier 1</h3>
+        <p>Create an inset listview in a jQuery app. Also give it at least one divider</p>
+    </div>
+    
+    <div data-role="collapsible">
+        <h3>Tier 2</h3>
+        <p>Using the previous list or a new one, make each list item have a different icon</p>
+        <p>Full list of icons <a href="http://view.jquerymobile.com/1.3.2/dist/demos/widgets/icons/" target="_blank">here</a>.</p>
+    </div>
+    
+      <div data-role="collapsible">
+        <h3>Tier 3</h3>
+        <p>Use a different page transition for each list item.</p>
+        <a href="http://view.jquerymobile.com/1.3.2/dist/demos/widgets/transitions/" target="_blank">How to change page transitions</a>
+      </div>
+    
+      <div data-role="collapsible">
+        <h3>Tier 4</h3>
+        <p>Make a formatted listview.</p>
+        
+						<div data-role="collapsible">
+							<h2>Like This</h2>
+								<ul data-role="listview" data-inset="true">
+										<li data-role="list-divider">Friday, October 8, 2010 <span class="ui-li-count">2</span></li>
+										<li><a href="index.html">
+												<h2>Stephen Weber</h2>
+												<p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+												<p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
+												<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+										</a></li>
+										<li><a href="index.html">
+												<h2>jQuery Team</h2>
+												<p><strong>Boston Conference Planning</strong></p>
+												<p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+												<p class="ui-li-aside"><strong>9:18</strong>AM</p>
+										</a></li>
+										<li data-role="list-divider">Thursday, October 7, 2010 <span class="ui-li-count">1</span></li>
+										<li><a href="index.html">
+												<h2>Avery Walker</h2>
+												<p><strong>Re: Dinner Tonight</strong></p>
+												<p>Sure, let's plan on meeting at Highland Kitchen at 8:00 tonight. Can't wait! </p>
+												<p class="ui-li-aside"><strong>4:48</strong>PM</p>
+										</a></li>
+								</ul>
+						</div>
+    </div>
+    
+    <div data-role="collapsible">
+  		<h2>Tier 5</h2>
+  			<h3>Custom Icons</h3>
+  			<p>Make a listview with 5 items, each with its own custom icon (i.e. not part of the standard jQuery icon set).</p>  
+    
+		</div>
+    </div><!--/Accordion-->
+  </div>
+</div> <!--/chal-listview -->
+	<div data-role="page" data-add-back-btn="true" id="chal-accordions">
+  <div data-role="header" data-theme="b">
+  	<h1>Accordions</h1>
+  </div>
+  <div data-role="content">
+  	<p>Accordions are really nifty widgets. They let your users access lots of iformation information on a single page while keeping it very small. All these challenges are actually contained in accordions</p>
+  	<p> To learn about <a href="http://view.jquerymobile.com/1.3.2/dist/demos/widgets/accordions/" target="_blank">accordions</a> you first need to understand its basic unit, the <a href="http://view.jquerymobile.com/1.3.2/dist/demos/widgets/collapsibles/" target="_blank">collapsible</a>.</p>
+  	
+  		<!--Accordion Start-->
+  		<div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    
+    <div data-role="collapsible">
+        <h3>Tier 1</h3>
+        <p>Create a collapsible</p>
+    </div>
+    
+    <div data-role="collapsible">
+        <h3>Tier 2</h3>
+        <p>Create a mini-collapsible with a different theme for the header than the content</p>
+    </div>
+    
+    <div data-role="collapsible">
+        <h3>Tier 3</h3>
+        <p>Create a 4 section accordion</p>
+    </div>
+    
+    <div data-role="collapsible">
+        <h3>Tier 4</h3>
+        <p>Change the active and inactive icons in the accordion you just made</p>
+    </div>
+    
+    <div data-role="collapsible">
+        <h3>Tier 5</h3>
+        <p>Create an accordion with:</p>
+        	<ol>
+        		<li>The first section already expanded</li>
+        		<li>A listview in the second section</li>
+        		<li>Another accordion in the third secion (accordionception)</li>
+        		<li>An image in the fourth section</li>
+        	</ol>
+    </div>
+</div>  <!--/Accordion-->
+  </div>
+</div> <!--/chal-accordions -->
+	<div data-role="page" data-add-back-btn="true" id="chal-images">
+  <div data-role="header" data-theme="b">
+  	<h1>Images</h1>
+  </div>
+  <div data-role="content">
+  	<p>Pictures make pretty</p>
+  	<div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+    
+    <div data-role="collapsible">
+        <h3>Tier 1</h3>
+        <p>Put an image into a webpage using a local file.</p>
+    </div>
+    
+    <div data-role="collapsible">
+        <h3>Tier 2</h3>
+        <p>Alter the size of an image so that it will be 70% width and also center it in the page.</p>
+    </div>
+    
+    <div data-role="collapsible">
+        <h3>Tier 3</h3>
+        <p>Put an image into your app at the top of a page's content.</p>
+    </div>
+    
+    <div data-role="collapsible">
+        <h3>Tier 4</h3>
+        <p>Put a small image into your app content and have the text wrap around it.</p>
+    </div>
+</div>  <!--/Accordion-->
+  </div>
+</div> <!--/chal-images -->
+	<div data-role="page" data-add-back-btn="true" id="chal-navbars">
+  <div data-role="header" data-theme="b">
+  	<h1>Navbars</h1>
+  </div>
+  <div data-role="content">
+  	<p>Navbars help to make your site navigatable (navigable?). They are but one way of offering navigation to your users. Click <a href="http://view.jquerymobile.com/1.3.2/dist/demos/widgets/navbar/" target="_blank">here</a> for documentation on how to use them.</p>
+  	<div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+  
+    <div data-role="collapsible">
+        <h3>Tier 1</h3>
+        <p>Make a simple nabber with a button linking home, and a button linking to the YEI website</p>
+    </div>
+    
+    <div data-role="collapsible">
+        <h3>Tier 2</h3>
+        <p>Add icons to the buttons positioned on the outside edges of the window</p>
+    </div>
+    
+    <div data-role="collapsible">
+        <h3>Tier 3</h3>
+        <p> Replace the YEI button with a functioning back button</p>
+    </div>
+    
+    <div data-role="collapsible">
+        <h3>Tier 4</h3>
+        <p>Ditch the navbar and put your buttons right in the header!</p>
+    </div>
+    
+    <div data-role="collapsible">
+        <h3>Tier 5</h3>
+        <p>Make your header <b>persistent</b>, meaning that it sticks to the top of the screen when you scroll down</p>
+    </div>
+    
+</div>  <!--/Accordion-->
+  </div>
+</div> <!--/chal-navbars -->
+
+<!--===================================================================================-->
+																  <!--Section-->
+<!--===================================================================================-->
+
+
+
+
+
+
+
+</body>
+</html>
